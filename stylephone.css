@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.brand img{
+	height:50px;
+	position: relative;
+	margin-left:5px;
+	margin-bottom:10px;
+}
+.navbar {
+	display: flex;
+	  z-index: 1;
+	  position: sticky;
+	  justify-content: flex-end;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  height: 60px;
+	  flex-direction: row;
+	  margin: 0;
+	  align-items: center;
+	  background-color:white;
+}
+.navbar ul{
+
+}
+.nav-item {
+	list-style: none;
+	display: inline;
+	margin:20px !important;
+	position:relative;
+
+}
+.nav-item a{
+	text-decoration: none;
+	color:#000;
+}
+#carousel-example-generic{
+	
+}
+.carousel-item img{
+	height:600px;
+	width:100%;
+}
+.carousel-control:hover{
+	background-color:rgba(53, 59, 72,0.3);
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    height: 100px !important;
+    width: 50px !important;
+
+}
+.carousel-indicators {
+	cursor:pointer;
+}
+.carousel-caption h5,p{
+	color:black;
+}
+.grid-item .details:hover{
+	text-decoration:none;
+}
+hr{
+	background-color:#000;
+	margin-top:40px;
+	margin-bottom:40px;
+}
+.content-container{
+	width:90%;
+	margin:auto;
+}
+.grid-item img{
+	width:300px;
+	height:250px;
+}
+.grid-item{
+	border:2px solid;
+	width:350px !important;
+	text-align:center;
+	border-radius:3px;
+}
+.grid-item input{
+	margin:5px;
+}
+.grid-item input:hover{
+	background-color:#000;
+	border:none;
+}
+.grid-container{
+	display:grid;
+	grid-template-columns:350px 350px 350px;
+	grid-template-rows: 400px;
+	grid-column-gap:30px;
+	grid-row-gap:40px; 	
+	justify-content:center;
+}
+footer{
+	background-color:black;
+	width:100%;
+	height:250px;
+	margin-top :20px;
+	position:relative;
+	text-align:center;
+}
+#contact {
+  margin-top: 20px;
+  color: white;
+}
+.social i {
+  font-size: 2em;
+  margin: 10px;
+}
+.social i:hover {
+  color: yellow;
+}
+.social .fa-facebook {
+  color: #1e3799;
+}
+.social .fa-google-plus-g {
+  color: #a62c28;
+}
+.social .fa-github {
+  color: white;
+}
+.social .fa-codepen {
+  color: white;
+}
+
+.hr-2 {
+  
+  background-color: white!important;
+  width:80%;
+  margin:auto !important;
+}
+#others p{
+  color: white;
+  margin-top:30px;
+}
