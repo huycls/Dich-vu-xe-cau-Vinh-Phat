@@ -316,6 +316,12 @@ h1 {
 }
 }
 
+@media screen and (max-width: 400px) {
+    .prenav{
+      padding: 20px 0;
+  }
+}
+
 /*social button*/
 .social-button {
   display: inline-grid;
