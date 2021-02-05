@@ -60,6 +60,10 @@ a {
   color: rgb(15, 188, 249);
 }
 
+.navbar{
+  background-color: #3498db!important;
+}
+
 .navbar-nav a {
   color: #fff !important;
 }
@@ -137,7 +141,7 @@ h1 {
   
   padding: 40px 15px;
   align-items: center;
-  background-color: rgb(30, 39, 46);
+  background-color:#3498db ;
   color: #fff;
 }
 
