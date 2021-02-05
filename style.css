@@ -505,7 +505,7 @@ h1 {
   height: 0;
   border-style: solid;
   border-width: 10px 10px 10px 0;
-  border-color: transparent rgb(103, 182, 52) transparent transparent;
+  border-color: transparent #ED4C67 transparent transparent;
   position: absolute;
   left: -10px;
   top: 10px;
