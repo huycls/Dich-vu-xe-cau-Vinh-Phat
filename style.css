@@ -51,6 +51,10 @@ a {
   height: 80px;
   line-height: normal;
 }
+
+.contact-info p{
+  margin: 0;
+}
 .contact-info i {
   color: rgb(15, 188, 249);
 }
@@ -319,12 +323,13 @@ h1 {
     max-width: 350px;
     max-height: 200px;
   }
-    .dichvu-content{
+  .dichvu-content{
     width: 90%;
   }
   .carousel {
     width: 100%;
   }
+  
 }
 
 @media screen and (max-width: 400px) {
