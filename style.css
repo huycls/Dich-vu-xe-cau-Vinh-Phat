@@ -319,9 +319,12 @@ h1 {
     max-width: 350px;
     max-height: 200px;
   }
-  .dichvu-content{
-  width: 90%;
-}
+    .dichvu-content{
+    width: 90%;
+  }
+  .carousel {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 400px) {
