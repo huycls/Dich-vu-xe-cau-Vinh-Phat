@@ -1,48 +1,56 @@
 /* CSS files add styling rules to your content */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
-  font-weight: bold;
 }
 
 
 .prenav {
   display: flex;
   justify-content: center;
+  background-color: #fbc531;
+}
+
+.prenav-inner{
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  flex-direction: column;
-  padding-top: 10px;
-  background-color: #fff;
-  font-weight: bold;
+}
+
+.prenav span{
+  margin-right: 20px;
+}
+
+.social-logo{
+  color:#000;
+  border: none;
+  padding: 3px 7px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.social-logo:hover{
+  color:royalblue;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar-toggler {
   background-color: #fff !important;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  text-shadow: 2px 4px 2px #c0c0c0;
-  font-size: 3.5rem;
-  color: rgb(15, 188, 249);
-}
-
-.logo:hover{
-  text-decoration: none;
-  color: rgb(15, 188, 249);
-}
-
-.logo img {
-  width: 100px;
-  height: 100px;
+.logo-img {
+  width: 50px;
+  height: 50px;
 }
 
 .contact-info {
@@ -59,62 +67,95 @@ a {
   color: rgb(15, 188, 249);
 }
 
-.navbar{
-  background-color: #3498db!important;
-}
 
-.navbar-nav a {
-  color: #fff !important;
-}
 .active a {
-  color: #222f3e !important;
-}
-.carousel {
-  width: 80%;
-  margin: 0 auto;
+  color: #0097e6 !important;
 }
 
-.carousel img {
+/*intro-banner*/
+.intro-banner{
+  position: relative;
   width: 100%;
-  max-height: 800px;
+  height: 40vh;
+  background-image: url(./vinh-phat/banner-vp.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.carousel-control:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.intro {
-  margin: 50px 0;
-}
-
-.intro-img img {
-  width: 100%;
-}
-
-h1 {
+.intro-banner h2{
+  color: #fff;
+  z-index: 3;
+  font-weight: bolder;
   text-align: center;
-  color: #33405e !important;
 }
+
+.intro-banner h4{
+  color: #fff;
+  z-index: 3;
+  font-weight: bold;
+  text-align: center;
+}
+
+.intro-banner:after{
+  background:rgb(30, 39, 46);
+  opacity: 50%;
+  height: 40vh;
+}
+
+.overlay:after{
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:2;
+}
+
+.service h2 {
+  text-align: center;
+  color:rgb(15, 188, 249) !important;
+}
+
+.pre-intro{
+  padding: 0 10%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pre-intro h5{
+  color: #0097e6;
+  font-weight: bold;
+}
+
 
 /*Dich vu*/
 
 .service {
-  background-color: #c8d6e5;
+  background-color: #fff;
   padding: 50px 0;
 }
 
 .card {
-  margin: 10px;
+  margin: 5px;
   padding-bottom: 30px;
 }
 
 .service-title {
-  color: rgb(30, 39, 46);
+  color: #0097e6;
   font-size: 1.5rem;
 }
 
 .service-title:hover {
-  color: #3498db;
+  color: #fbc531;
 }
 
 .card .call-btn {
@@ -123,12 +164,12 @@ h1 {
   position: absolute;
   right: 20px;
   bottom: 15px;
-  background-color: rgb(30, 39, 46);
+  background-color: #0097e6;
   color: #fff;
 }
 
 .card .call-btn:hover {
-  background-color: #3498db;
+  background-color: #fbc531;
 }
 
 .footer {
@@ -137,16 +178,25 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  
   padding: 40px 15px;
   align-items: center;
-  background-color:#3498db ;
-  color: #fff;
+  background-color:#fbc531 ;
+  color: #000;
+}
+
+.social-field .social-logo{
+  font-size: 2rem!important;
+  margin-left: 3rem;
+}
+
+.social-field{
+  padding-bottom: .5rem;
 }
 
 .map iframe {
   max-width: 90%;
   max-height: 300px;
+  float: right;
 }
 
 .gioithieu {
@@ -158,6 +208,7 @@ h1 {
 
 .gioithieu h1 {
   margin-top: 30px;
+  text-align: center;
 }
 
 .gioithieu img {
@@ -168,6 +219,48 @@ h1 {
 
 .gioithieu p {
   text-align: left !important;
+}
+
+/*Hinh anh tieu bieu*/
+
+.gallery{
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.gallery h2{
+  color:rgb(15, 188, 249)
+}
+
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  list-style: none;
+  animation: scrolling 20s linear infinite;
+}
+
+.marquee-item {
+  height: 250px;
+  width: auto;
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+.marquee-image {
+  white-space: nowrap;
+}
+
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translatex(-2000px); }
 }
 
 /*Lien he*/
@@ -309,11 +402,27 @@ h1 {
   width: 70%;
 }
 
+.dichvu-content h1{
+  color:#0089B9;
+  font-weight: bold;
+  text-align: center;
+}
+
 @media screen and (max-width: 1024px) {
   .slide {
     width: 95%;
   }
   
+}
+
+@media screen and (max-width: 850px) {
+  .prenav{
+    display: none;
+  }
+  .pre-intro{
+    height: 50vh;
+    padding: 2rem;;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -484,22 +593,7 @@ h1 {
   -o-animation: headerAnimation 0.7s 1;
   animation: headerAnimation 0.7s 1;
 }
-@-webkit-keyframes "headerAnimation" {
-  0% {
-    margin-top: -70px;
-  }
-  100% {
-    margin-top: 0;
-  }
-}
-@keyframes "headerAnimation" {
-  0% {
-    margin-top: -70px;
-  }
-  100% {
-    margin-top: 0;
-  }
-}
+
 .social-button a span:before {
   content: "";
   width: 0;
